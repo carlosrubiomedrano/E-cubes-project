@@ -3,170 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Cubes Framework</title>
+    <title>E-Cubes Project - Home</title>
     <style>
-        /* General Body Styles */
         body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
+            background-color: #f6f8fa;
+            color: #24292e;
         }
-        /* Navigation Bar */
-        nav {
+  .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        header,.content-box {
             background-color: #ffffff;
-            padding: 0.5rem 1rem;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: flex-start;
-            padding-left: 5%;
+            border: 1px solid #e1e4e8;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+        }
+        nav {
+            background-color: #24292e;
+            padding: 1em 0;
+            margin-bottom: 2em;
         }
         nav ul {
-            margin: 0;
-            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2em;
             list-style: none;
             display: flex;
+            gap: 20px;
         }
-        nav ul li a {
-            display: block;
-            color: #555;
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            padding: 1rem 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.1em;
         }
-        nav ul li a.active,
-        nav ul li a:hover {
-            color: #000;
-            border-bottom: 2px solid #333;
+        nav a:hover {
+            text-decoration: underline;
         }
-        /* Main Content Container */
-        .container {
-            max-width: 960px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        h1, h2 {
+            color: #24292e;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
         }
-        /* Content Cards */
-        .card {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        /* Headings */
-        h1 {
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        h2 {
-            font-size: 1.5rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        /* Paragraphs and Lists */
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            padding-left: 20px;
-            line-height: 1.7;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        /* Image Styling */
-        img {
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+      .framework-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 1.5rem auto;
-        }
-        /* Link Styling */
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Button Styles */
-        .button-container {
-            margin-top: 1.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .button {
-            display: inline-block;
-            background-color: #28a745;
-            color: #ffffff;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-        .button:hover {
-            background-color: #218838;
-            color: #ffffff;
-            text-decoration: none;
-        }
-        /* Blue Button Style */
-        .button.primary {
-            background-color: #007bff;
-            display: inline-block;
-            text-align: center;
-        }
-        .button.primary:hover {
-            background-color: #0069d9;
-        }
-        /* Video Section Styling */
-        h3 {
-            font-size: 1.3rem;
-            margin-top: 2rem;
-        }
-        .section-divider {
-            border: none;
-            border-top: 1px solid #eee;
-            margin: 2rem 0;
-        }
-        /* Responsive Video Container */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin-top: 1rem;
+            margin: 1.5em auto;
             border-radius: 8px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
         }
     </style>
 </head>
 <body>
+
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Assignments/index.html">Assignments</a></li>
         </ul>
     </nav>
-    <main class="container">
-        <div class="card">
+
+    <div class="container">
+        <header>
             <h1>E-Cubes: A Dissemination, Teaching, and Training Framework</h1>
-        </div>
-        <div class="card">
-            <h2>Project Overview</h2>
-            <p>
-                There is a need for easy
+        </header>
+
+        <main>
+            <section class="content-box">
+                <h2>Project Overview</h2>
+                <p>There is a need for easy-to-install, easy-to-use, and easy-to-support educational materials that can be distributed to different individuals and communities lacking access to proper cyber resources and the support of dedicated IT staff. Addressing this need, we introduce E-Cubes, a customizable, extensible, and convenient educational framework, which is deployed as open-access, plug-and-play, and hands-on learning modules.</p>
+
+                <img src="assets/e-cubes-framework.png" alt="E-Cubes Framework Layers Diagram showing Support, Payload, Tools, and Container layers" class="framework-image">
+
+                <p>E-Cubes is available via the Open Source via CC BY (Creative Commons) licensing option as a series of self-contained modules featuring four layers:</p>
+                <ul>
+                    <li><strong>The Container layer:</strong> Provides enhanced convenience for installing E-Cubes in user-specific hardware and software platforms leveraging OS-level virtualization.</li>
+                    <li><strong>The Tools layer:</strong> Provides the necessary back-end software platforms supporting the educational tasks.</li>
+                    <li><strong>The Payload layer:</strong> Contains the educational materials for the learning experience, such as course assignments and lab sessions.</li>
+                    <li><strong>The Support layer:</strong> Contains additional materials like tutorials, videos, and documentation websites to assist students.</li>
+                </ul>
+            </section>
+
+            <section class="content-box">
+                <h2>Project Source Code</h2>
+                <p>All source files, documentation, and project materials are available on our official GitHub repository.</p>
+                <ul>
+                    <li><a href="https://github.com/carlosrubiomedrano/E-cubes-projecta" target="_blank">View E-Cubes-Projecta Repository on GitHub</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
